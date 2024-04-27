@@ -1,0 +1,15 @@
+ssh-keygen -t ed25519 -C "dev@konradbausch.com"
+ssh-add ~/.ssh/id_ed25519
+
+git config --global init.defaultBranch main
+
+git config --global user.email "dev@konradbausch.com"
+git config --global user.name "Konrad Bausch"
+
+git config --global gpg.format ssh
+git config --global user.signingkey /home/konrad/.ssh/id_ed25519.pub
+
+git config --global commit.gpgsign true
+
+
+
